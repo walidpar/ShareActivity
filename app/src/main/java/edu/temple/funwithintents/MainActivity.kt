@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         // When the user clicks this button, share the text if not empty
         findViewById<ImageButton>(R.id.shareImageButton).setOnClickListener {
-            if (editText != null) {
+            if (editText.text != null) {
                 startActivity(shareIntent)
             }
         }
